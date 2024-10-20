@@ -19,3 +19,11 @@ set_val=set((1,2,(("one","two"),'a','b')))
 print(set_val,type(set_val))
 set_val2=set('saeed')
 print(set_val2,type(set_val2))
+
+print("\n\n ")
+l1=[1,2,3]
+l2=[4,5,6]
+l1=l2
+print(l1,l2)
+l1[2]=10
+print(l1,l2)

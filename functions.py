@@ -40,3 +40,14 @@ def myfunc():
 myfunc()
 
 print("Python is " + val1)
+
+
+def fibo(number):
+    if number == 0 or number == 1:
+        return number
+    else:
+        return fibo(number - 1) + fibo(number - 2)
+
+number = int(input('Enter a number: '))
+for i in range(1,number+1):
+    print(fibo(i))
