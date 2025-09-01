@@ -1,15 +1,15 @@
-def get_int(prompt):
+def get_int(prompt: str) -> int:
+    """دریافت عدد صحیح از کاربر با بررسی ورودی"""
     while True:
         try:
-           # return int(input())
             return int(input(prompt))
         except ValueError:
-            print("Please enter a number!")
+            print("❌ Please enter a valid integer number!")
 
-
-def check_second_num(a):
+def check_second_num(a: int) -> int:
+    """دریافت عدد دوم که باید بزرگتر از a باشد"""
     while True:
-        b = get_int(f"ok Please enter num bigger than {a}: \n")
+        b = get_int(f"Ok, please enter a number bigger than {a}: ")
         if b > a:
             return b
-        print("Your a number is bigger than b : \n")
+        print(f"❌ The number must be bigger than {a}. Try again.")
